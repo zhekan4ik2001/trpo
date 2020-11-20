@@ -1,4 +1,6 @@
 <?php
+
+namespace Plastinin;
 class LineEquation
 {
     protected $x;

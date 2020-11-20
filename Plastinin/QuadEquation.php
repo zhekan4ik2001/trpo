@@ -1,10 +1,13 @@
 <?php
-class QuadEquation extends LineEquation{
+namespace Plastinin;
+use core\EquationInterface;
+require_once "core\EquationInterface.php";
+class QuadEquation extends LineEquation implements EquationInterface{
     protected $x_;
     protected function discriminant($a,$b,$c){
         return $b*$b-4*$a*$c;
     }
-    public function quadEquation($a,$b,$c){
+    public function solve($a,$b,$c){
         if($a==0) {
             return $this->x_ = array($this::lineEquation($b, $c));
         }
