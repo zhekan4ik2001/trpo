@@ -1,7 +1,6 @@
 <?php
 namespace Plastinin;
 use core\EquationInterface;
-require_once "core\EquationInterface.php";
 class QuadEquation extends LineEquation implements EquationInterface{
     protected $x_;
     protected function discriminant($a,$b,$c){

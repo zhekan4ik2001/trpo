@@ -2,8 +2,6 @@
 namespace Plastinin;
 use core\LogAbstract;
 use core\LogInterface;
-require_once "core\LogInterface.php";
-require_once "core\LogAbstract.php";
 class PlastininLog extends LogAbstract implements LogInterface{
 
     public static function log($str){
