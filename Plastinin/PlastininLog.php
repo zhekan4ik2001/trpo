@@ -16,8 +16,18 @@ class PlastininLog extends LogAbstract implements LogInterface{
     }
 
     public function _write(){
-        foreach(PlastininLog::$i->log as $value){
-            echo $value."\n\r";
+        $log='';
+		if (!is_dir("log")) {
+            mkdir("log");
         }
+
+        foreach (PlastininLog::$i->log as $value) {
+            $log .= $value."\n\r";
+        }
+        echo $log;
+
+        $d = new \DateTime();
+        $logFileName = "log/".$d->format('d.m.Y_H.i.s.ms').".log";
+        file_put_contents($logFileName, implode("\n", $this->log));
     }
 }

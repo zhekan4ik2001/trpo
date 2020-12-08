@@ -9,6 +9,7 @@ require_once "Plastinin\QuadEquation.php";
 require_once "Plastinin\PlastininLog.php";
 require_once "Plastinin\PlastininException.php";
 try{
+    PlastininLog::log("Версия программы ". file_get_contents('./version'));
     echo "Введите 3 параметра a, b и с\n\r";
     $a=readline("A = \n\r");
     $b=readline("В = \n\r");
