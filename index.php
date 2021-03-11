@@ -1,13 +1,10 @@
 <?php
+
+require __DIR__ . "/vendor/autoload.php";
+
 use Plastinin\QuadEquation;
 use Plastinin\PlastininLog;
-require_once "core\EquationInterface.php";
-require_once "core\LogInterface.php";
-require_once "core\LogAbstract.php";
-require_once "Plastinin\LineEquation.php";
-require_once "Plastinin\QuadEquation.php";
-require_once "Plastinin\PlastininLog.php";
-require_once "Plastinin\PlastininException.php";
+
 try{
     PlastininLog::log("Версия программы ". file_get_contents('./version'));
     echo "Введите 3 параметра a, b и с\n\r";

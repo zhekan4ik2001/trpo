@@ -1,0 +1,22 @@
+{
+    "name": "zhekan4ik2001/trpo",
+    "description": "TRPO project",
+    "type": "project",
+    "license": "MIT",
+    "scripts": {
+        "post-install-cmd": "git symbolic-ref --short -q HEAD > version"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/zhekan4ik2001/trpo-2.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/rok9ru/trpo-core.git"
+        }
+    ],
+    "require": {
+        "zhekan4ik2001/trpo-2": "^1.0"
+    }
+}
