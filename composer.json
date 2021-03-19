@@ -17,6 +17,6 @@
         }
     ],
     "require": {
-        "zhekan4ik2001/trpo-2": "^1.0"
+        "zhekan4ik2001/trpo-2": "^5.0"
     }
 }
